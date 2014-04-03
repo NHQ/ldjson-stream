@@ -10,7 +10,7 @@ function parse(bool) {
   return split(function(row) {
     if (row) {
       if(!bool) return JSON.parse(row)
-      else() return row
+      else return row
     }
   })
 }
