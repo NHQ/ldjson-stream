@@ -6,9 +6,12 @@ module.exports = parse
 module.exports.serialize = serialize
 module.exports.parse = parse
 
-function parse() {
+function parse(bool) {
   return split(function(row) {
-    if (row) return JSON.parse(row)
+    if (row) {
+      if(!bool) return JSON.parse(row)
+      else() return row
+    }
   })
 }
 
